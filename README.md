@@ -7,6 +7,8 @@
 ![Battle of the AI Agents](!/codex-mascot.svg)
 ![Battle of the AI Agents](!/gemini-mascot.svg)
 
+![AI Models](!/banner-models.svg)
+
 > **Last Updated:** 2026-02-03
 
 ## Context Window Comparison
