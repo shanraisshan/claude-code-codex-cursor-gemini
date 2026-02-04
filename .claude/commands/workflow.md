@@ -1,6 +1,6 @@
-# Context Window Research Workflow
+# Context Window & Features Research Workflow
 
-Execute the daily context window research workflow to keep `README.md` up-to-date.
+Execute the research workflow to keep `README.md` up-to-date with the latest context windows and features.
 
 ---
 
@@ -50,32 +50,90 @@ steps:
     execution: parallel
     tasks:
       - agent: claude-code-research-agent
-        action: Research latest Claude Code models and context windows
-        sources:
-          - https://docs.anthropic.com/en/docs/about-claude/models
-          - https://docs.anthropic.com/en/docs/claude-code
-        output: Append findings to research.md under "## Claude Code Research" section
+        action: Research Claude Code - TWO SECTIONS REQUIRED
+        research_topics:
+          1_context_windows:
+            - Latest Claude models (Opus, Sonnet, Haiku) and their context window sizes
+            - Any beta features (extended context like 1M)
+            - Max output token limits
+            - Model deprecations or new releases
+          2_features:
+            - Hooks support and event types
+            - MCP/Plugin support
+            - Sub-agents capability
+            - Slash commands available
+            - Custom commands/skills
+            - IDE integrations
+            - Git integration features
+            - Web search capability
+            - Sandbox/security features
+            - Cost tracking options
+        output: Append findings to research.md under "## Claude Code Research" with subsections for "### Context Windows" and "### Features"
 
       - agent: codex-cli-research-agent
-        action: Research latest Codex CLI models and context windows
-        sources:
-          - https://platform.openai.com/docs/models
-          - https://openai.com/index/introducing-o3-and-o4-mini/
-        output: Append findings to research.md under "## Codex CLI Research" section
+        action: Research Codex CLI - TWO SECTIONS REQUIRED
+        research_topics:
+          1_context_windows:
+            - Latest Codex/GPT models and their context window sizes
+            - Context compaction features
+            - Max output token limits
+            - Model deprecations or new releases
+          2_features:
+            - Hooks support
+            - MCP/Plugin support
+            - Sub-agents capability
+            - Slash commands available
+            - Custom commands
+            - IDE integrations
+            - Git integration features
+            - Web search capability
+            - Sandbox/approval modes
+            - Cost tracking options
+        output: Append findings to research.md under "## Codex CLI Research" with subsections for "### Context Windows" and "### Features"
 
       - agent: cursor-research-agent
-        action: Research latest Cursor supported models and context windows
-        sources:
-          - https://cursor.com/docs/models
-          - https://cursor.com/changelog
-        output: Append findings to research.md under "## Cursor Research" section
+        action: Research Cursor - TWO SECTIONS REQUIRED
+        research_topics:
+          1_context_windows:
+            - All supported models (Anthropic, OpenAI, Google, xAI, DeepSeek, Cursor native)
+            - Context window sizes for each model
+            - Normal vs Max mode differences
+            - Model deprecations or new releases
+          2_features:
+            - Hooks support
+            - VS Code extension compatibility
+            - Sub-agents/parallel agents
+            - Slash commands available
+            - Custom rules (.cursorrules)
+            - Composer/Agent mode capabilities
+            - Git integration features
+            - Web search (@Web)
+            - Background agents
+            - Codebase indexing
+            - MCP support
+        output: Append findings to research.md under "## Cursor Research" with subsections for "### Context Windows" and "### Features"
 
       - agent: gemini-cli-research-agent
-        action: Research latest Gemini CLI models and context windows
-        sources:
-          - https://ai.google.dev/gemini-api/docs
-          - https://github.com/google-gemini/gemini-cli
-        output: Append findings to research.md under "## Gemini CLI Research" section
+        action: Research Gemini CLI - TWO SECTIONS REQUIRED
+        research_topics:
+          1_context_windows:
+            - Latest Gemini models and their context window sizes
+            - Max output token limits
+            - Model deprecations timeline
+            - New model releases
+          2_features:
+            - Hooks support
+            - Extensions/MCP support
+            - Sub-agents capability
+            - Slash commands available
+            - Custom commands (TOML)
+            - IDE integrations
+            - Git integration features
+            - Web search (Google Search grounding)
+            - Sandbox modes
+            - Google Cloud integration
+            - Cost tracking (/stats)
+        output: Append findings to research.md under "## Gemini CLI Research" with subsections for "### Context Windows" and "### Features"
 
   - step: 2
     name: Aggregate & Compare
@@ -85,7 +143,7 @@ steps:
       - action: Read all agent findings from research.md
       - action: Read current README.md and reports/context-comparison.md
       - action: Create result.md with aggregated findings
-      - action: Generate diff section showing changes between current and new data
+      - action: Generate diff section showing changes for BOTH context windows AND features
       - action: DO NOT update README directly
 
   - step: 3
@@ -93,7 +151,7 @@ steps:
     description: Present findings and request approval
     execution: sequential
     tasks:
-      - action: Display summary of changes found
+      - action: Display summary of changes found (context windows AND features)
       - action: Show diff between current README and proposed updates
       - action: Ask user "These are my findings. Do you want to update the README?"
       - action: Wait for user confirmation before making any changes
@@ -106,14 +164,14 @@ steps:
 ```
 research/
 └── {YYYY-MM-DD_HH-MM-SS}/
-    ├── research.md      # Individual agent findings
+    ├── research.md      # Individual agent findings (context windows + features)
     └── result.md        # Aggregated results and diff
 ```
 
 ### research.md Format
 
 ```markdown
-# Context Window Research Session
+# Context Window & Features Research Session
 
 **Started:** {timestamp}
 **Status:** In Progress
@@ -124,7 +182,11 @@ research/
 **Agent:** Dr. Sarah Chen
 **Status:** Pending/Complete
 
-[Agent writes findings here]
+### Context Windows
+[Agent writes context window findings here]
+
+### Features
+[Agent writes feature findings here]
 
 ---
 
@@ -132,7 +194,11 @@ research/
 **Agent:** Marcus Thompson
 **Status:** Pending/Complete
 
-[Agent writes findings here]
+### Context Windows
+[Agent writes context window findings here]
+
+### Features
+[Agent writes feature findings here]
 
 ---
 
@@ -140,7 +206,11 @@ research/
 **Agent:** Elena Rodriguez
 **Status:** Pending/Complete
 
-[Agent writes findings here]
+### Context Windows
+[Agent writes context window findings here]
+
+### Features
+[Agent writes feature findings here]
 
 ---
 
@@ -148,7 +218,11 @@ research/
 **Agent:** Dr. Raj Patel
 **Status:** Pending/Complete
 
-[Agent writes findings here]
+### Context Windows
+[Agent writes context window findings here]
+
+### Features
+[Agent writes feature findings here]
 ```
 
 ### result.md Format
@@ -160,24 +234,30 @@ research/
 
 ## Summary
 
-| Tool | Models Found | Changes Detected |
-|------|--------------|------------------|
-| Claude Code | X | Yes/No |
-| Codex CLI | X | Yes/No |
-| Cursor | X | Yes/No |
-| Gemini CLI | X | Yes/No |
+| Tool | Context Window Changes | Feature Changes |
+|------|------------------------|-----------------|
+| Claude Code | Yes/No | Yes/No |
+| Codex CLI | Yes/No | Yes/No |
+| Cursor | Yes/No | Yes/No |
+| Gemini CLI | Yes/No | Yes/No |
 
-## Proposed README Updates
+## Proposed Context Window Updates
 
-[New quick comparison table]
+[New context window comparison table]
 
-## Proposed Report Updates
+## Proposed Feature Updates
 
-[New detailed comparison data]
+[New feature comparison table]
 
 ## Diff: Current vs New
 
-### README.md Changes
+### README.md - Context Window Changes
+```diff
+- old line
++ new line
+```
+
+### README.md - Feature Changes
 ```diff
 - old line
 + new line
@@ -201,15 +281,17 @@ Execute this workflow by following these steps:
 mkdir -p ${CLAUDE_PROJECT_DIR}/research/{YYYY-MM-DD_HH-MM-SS}
 ```
 
-**Step 1**: Use the Task tool to launch all 4 research agents in **parallel** (single message with 4 Task tool calls). Each agent must write their findings to the shared `research.md` file.
+**Step 1**: Use the Task tool to launch all 4 research agents in **parallel** (single message with 4 Task tool calls). Each agent must research BOTH:
+- Context window information (models, sizes, limits)
+- Feature information (hooks, plugins, commands, integrations, etc.)
 
 **Step 2**: After all agents complete, read their findings and create `result.md` with:
 - Aggregated data from all agents
-- Comparison with current README.md
+- Comparison with current README.md (both context window AND feature sections)
 - Clear diff showing what would change
 
 **Step 3**: Present findings to user and ask for confirmation:
-> "These are my findings. Do you want to update the README?"
+> "These are my findings for context windows and features. Do you want to update the README?"
 
 **IMPORTANT**: Do NOT update README.md or reports/context-comparison.md without explicit user approval.
 
@@ -219,7 +301,7 @@ mkdir -p ${CLAUDE_PROJECT_DIR}/research/{YYYY-MM-DD_HH-MM-SS}
 
 ```yaml
 output:
-  header: "CONTEXT WINDOW RESEARCH WORKFLOW"
+  header: "CONTEXT WINDOW & FEATURES RESEARCH WORKFLOW"
   date: YYYY-MM-DD
   research_folder: research/{timestamp}/
 
@@ -229,28 +311,31 @@ output:
 
   phase_1_results:
     claude_code:
-      models_found: X
-      changes: true/false
+      context_window_changes: true/false
+      feature_changes: true/false
       written_to_research_md: true/false
     codex_cli:
-      models_found: X
-      changes: true/false
+      context_window_changes: true/false
+      feature_changes: true/false
       written_to_research_md: true/false
     cursor:
-      models_found: X
-      changes: true/false
+      context_window_changes: true/false
+      feature_changes: true/false
       written_to_research_md: true/false
     gemini_cli:
-      models_found: X
-      changes: true/false
+      context_window_changes: true/false
+      feature_changes: true/false
       written_to_research_md: true/false
 
   phase_2_results:
     result_md_created: true/false
-    diff_generated: true/false
+    context_window_diff_generated: true/false
+    feature_diff_generated: true/false
     changes_found:
-      - description of change 1
-      - description of change 2
+      context_windows:
+        - description of change 1
+      features:
+        - description of change 1
 
   phase_3_results:
     user_prompted: true/false
@@ -266,5 +351,6 @@ output:
 Begin execution now:
 1. First, create the timestamped research folder and initialize research.md
 2. Then launch all 4 research agents in parallel using a single message with multiple Task tool calls
-3. After agents complete, create result.md with findings and diff
-4. Ask user for approval before updating any files
+3. Each agent MUST research BOTH context windows AND features
+4. After agents complete, create result.md with findings and diff for both sections
+5. Ask user for approval before updating any files

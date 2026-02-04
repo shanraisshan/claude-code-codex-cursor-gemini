@@ -9,7 +9,7 @@
 
 ![AI Models](!/banner-models.svg)
 
-> **Last Updated:** 2026-02-03
+> **Last Updated:** 2026-02-04
 
 ## Context Window Comparison
 
@@ -21,3 +21,27 @@
 | Gemini CLI | 1M | Gemini 3 Pro Preview | [Gemini API](https://ai.google.dev/gemini-api/docs/models) |
 
 [View Full Report](reports/context-comparison.md)
+
+---
+
+## Feature Comparison
+
+| Feature | Claude Code | Codex CLI | Gemini CLI | Cursor |
+|---------|:-----------:|:---------:|:----------:|:------:|
+| **Hooks** | ✅ | ⚠️ | ⚠️ | ✅ |
+| **Plugins/MCP** | ✅ | ⚠️ | ✅ | ✅ |
+| **Sub-agents** | ✅ | ✅ | ⚠️ | ✅ |
+| **Slash Commands** | ✅ | ✅ | ✅ | ✅ |
+| **Custom Commands** | ✅ | ✅ | ✅ | ✅ |
+| **IDE Integration** | ✅ | ✅ | ✅ | ✅ |
+| **Git Integration** | ✅ | ✅ | ✅ | ✅ |
+| **Web Search** | ✅ | ✅ | ✅ | ✅ |
+| **Image Support** | ⚠️ | ✅ | ✅ | ⚠️ |
+| **Memory/Persistence** | ⚠️ | ✅ | ✅ | ⚠️ |
+| **Multi-file Editing** | ✅ | ✅ | ✅ | ✅ |
+| **Auto-commit** | ⚠️ | ⚠️ | ✅ | ✅ |
+| **Custom System Prompts** | ✅ | ⚠️ | ✅ | ✅ |
+| **Cost Tracking** | ✅ | ⚠️ | ✅ | ⚠️ |
+| **Sandbox Mode** | ❌ | ✅ | ✅ | ⚠️ |
+
+[View Full Report](reports/feature-comparison.md)
