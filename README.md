@@ -9,7 +9,7 @@
 
 ![AI Models](!/banner-models.svg)
 
-> **Last Updated:** 2026-02-06
+> **Last Updated:** 2026-02-09
 
 **AI TERMS:**
 
@@ -24,13 +24,13 @@
 
 | Tool | Largest Context | Best Model | Input $/M | Output $/M | Source |
 |------|-----------------|------------|-----------|------------|--------|
-| Claude Code | 1M (beta) | Opus 4.6 with `--betas context-1m-2025-08-07` | $5.00 | $25.00 | [Anthropic Models](https://docs.anthropic.com/en/docs/about-claude/models) |
-| Codex CLI | 400k+ | GPT-5.3-Codex (context compaction) | TBD* | TBD* | [OpenAI Models](https://platform.openai.com/docs/models) |
-| Cursor | 2M (Max mode) | Grok 4 | $3.00** | $15.00** | [Cursor Models](https://cursor.com/docs/models) |
+| Claude Code | 1M (beta) | Opus 4.6 with `context-1m-2025-08-07` beta | $5.00 | $25.00 | [Anthropic Models](https://docs.anthropic.com/en/docs/about-claude/models) |
+| Codex CLI | 400k | GPT-5.3-Codex (Feb 2026) | TBD* | TBD* | [OpenAI Models](https://platform.openai.com/docs/models) |
+| Cursor | 2M (native) | Gemini 3 Pro (200k/1M/2M modes) | $2.00** | $12.00** | [Cursor Models](https://cursor.com/docs/models) |
 | Gemini CLI | 1M | Gemini 3 Pro Preview | $2.00 | $12.00 | [Gemini API](https://ai.google.dev/gemini-api/docs/models) |
 
-> \* GPT-5.3-Codex pricing not yet published by OpenAI (predecessor GPT-5.2-Codex: $1.75/$14.00)
-> \*\* Cursor uses subscription pricing ($20/mo Pro); API prices shown are for the underlying Grok 4 model via xAI
+> \* GPT-5.3-Codex pricing not yet published by OpenAI (Feb 2026 release)
+> \*\* Cursor uses subscription pricing ($20/mo Pro); API prices shown are for underlying models
 
 [View Full Report](reports/context-comparison.md)
 
@@ -40,20 +40,20 @@
 
 | Feature | Claude Code | Codex CLI | Gemini CLI | Cursor |
 |---------|:-----------:|:---------:|:----------:|:------:|
-| **Hooks** | ✅ | ⚠️ | ✅ | ✅ |
-| **Plugins/MCP** | ✅ | ✅ | ✅ | ✅ |
-| **Sub-agents** | ✅ | ✅ | ✅ | ✅ |
-| **Slash Commands** | ✅ | ✅ | ✅ | ✅ |
-| **Custom Commands** | ✅ | ✅ | ✅ | ✅ |
-| **IDE Integration** | ✅ | ✅ | ✅ | ✅ |
-| **Git Integration** | ✅ | ✅ | ✅ | ✅ |
-| **Web Search** | ✅ | ✅ | ✅ | ✅ |
-| **Image Support** | ✅ | ✅ | ✅ | ⚠️ |
-| **Memory/Persistence** | ✅ | ✅ | ✅ | ⚠️ |
-| **Multi-file Editing** | ✅ | ✅ | ✅ | ✅ |
-| **Auto-commit** | ⚠️ | ⚠️ | ✅ | ✅ |
-| **Custom System Prompts** | ✅ | ✅ | ✅ | ✅ |
-| **Cost Tracking** | ✅ | ❌ | ✅ | ⚠️ |
-| **Sandbox Mode** | ✅ | ✅ | ✅ | ⚠️ |
+| **Hooks** | ✅ 9+ types | ⚠️ Limited | ✅ 10 events | ✅ 40x faster |
+| **Plugins/MCP** | ✅ Full | ✅ Full | ✅ FastMCP | ✅ Full |
+| **Sub-agents** | ✅ Teams (exp) | ✅ Beta | ✅ A2A (exp) | ✅ Custom |
+| **Slash Commands** | ✅ Custom | ✅ Custom | ✅ Custom | ✅ Custom |
+| **Custom Commands** | ✅ Skills | ✅ AGENTS.md | ✅ GEMINI.md | ✅ Rules |
+| **IDE Integration** | ✅ VS/JetBrains | ✅ Multi-platform | ✅ VS Code | ✅ Native |
+| **Git Integration** | ✅ Hub (beta) | ✅ GitHub (preview) | ✅ Actions (beta) | ✅ Blame (ent) |
+| **Web Search** | ✅ US only | ✅ Built-in | ✅ Grounding | ✅ @Web |
+| **Image Support** | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
+| **Memory/Persistence** | ✅ Session | ✅ Thread | ✅ Project | ✅ Memories |
+| **Multi-file Editing** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Composer |
+| **Auto-commit** | ⚠️ Via hooks | ⚠️ Manual | ✅ Native | ✅ Native |
+| **Custom System Prompts** | ✅ Settings | ✅ AGENTS.md | ✅ GEMINI.md | ✅ Rules |
+| **Cost Tracking** | ✅ Dashboard | ⚠️ /status | ✅ /stats | ⚠️ Enterprise |
+| **Sandbox Mode** | ✅ Native | ✅ OS-enforced | ✅ Container | ✅ Linux (ent) |
 
 [View Full Report](reports/feature-comparison.md)
