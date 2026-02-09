@@ -15,6 +15,7 @@
 | Agent = LLM + memory + planning + tools | [Lilian Weng](https://lilianweng.github.io/) (ex-OpenAI) | Foundational framework defining LLM-powered autonomous agents |
 | AI Engineer | [Swyx / Shawn Wang](https://www.smol.ai/) (Smol.ai) | Engineer building with AI APIs without deep ML expertise — a new role distinct from ML Engineer |
 | AI Slop | [Simon Willison](https://simonwillison.net/) & [Casey Newton](https://www.platformer.news/) | Low-quality AI-generated content produced in quantity |
+| Brownfield Project | | An existing codebase or system that must be maintained, extended, or modernized — working within legacy constraints, technical debt, and established architecture |
 | Centaur Work | [Ethan Mollick](https://www.oneusefulthing.org/) (Wharton) | Human-AI collab with clear division — human does X, AI does Y, switching strategically |
 | Chain-of-Thought Prompting | [Jason Wei](https://x.com/jabornewe) (Google/OpenAI) | Intermediate reasoning steps to improve LLM performance on complex tasks |
 | Closing the Loop | | Ensuring AI output feeds back for validation and correction |
@@ -26,6 +27,7 @@
 | Dumb Zone | | Context window region where AI performance degrades |
 | Existential Risk (X-Risk) | [Nick Bostrom](https://nickbostrom.com/) (Oxford) | Risk threatening premature extinction of humanity or permanent destruction of its future potential |
 | Ghost Intelligence | [Andrej Karpathy](https://x.com/karpathy) (Eureka Labs, ex-OpenAI) | LLM intelligence as "summoning ghosts" — emphasizing alien cognitive architecture |
+| Greenfield Project | | A new project built from scratch with no legacy constraints — freedom to choose architecture, tools, and patterns without existing technical debt |
 | Hallucination | | AI generating plausible but incorrect information |
 | Harness | | Framework wrapping AI for controlled execution |
 | Intelligence Explosion | [I.J. Good](https://en.wikipedia.org/wiki/I._J._Good) (Mathematician) | Self-improving AI triggering a runaway feedback loop of ever-increasing intelligence |
