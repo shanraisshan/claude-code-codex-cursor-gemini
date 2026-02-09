@@ -18,7 +18,7 @@
 | Agentic Engineering | AI Slop | Context Bloat | Context Engineering | Context Rot |
 | Dumb Zone | Hallucination | Scaffolding | Orchestration | Vibe Coding |
 
-[**See Complete List →**](/reports/ai-terms)
+[**See Complete List →**](/reports/ai-terms.md)
 
 ## Context Window Comparison
 

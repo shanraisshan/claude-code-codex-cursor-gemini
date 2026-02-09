@@ -22,46 +22,46 @@
 
   <!-- Row 1 -->
   <g transform="translate(10, 15)">
-    <!-- Claude Sonnet 5 -->
+    <!-- Claude Opus 4.6 -->
     <g>
-      <rect x="0" y="0" width="110" height="28" rx="14" class="pill-dark"/>
-      <rect x="0" y="0" width="110" height="28" rx="14" class="shimmer-overlay"/>
-      <text x="55" y="18" class="label" text-anchor="middle">Claude Sonnet 5</text>
+      <rect x="0" y="0" width="115" height="28" rx="14" class="pill-dark"/>
+      <rect x="0" y="0" width="115" height="28" rx="14" class="shimmer-overlay"/>
+      <text x="57.5" y="18" class="label" text-anchor="middle">Claude Opus 4.6</text>
     </g>
 
-    <!-- Claude Opus 4.5 -->
+    <!-- Claude Sonnet 4.5 -->
     <g>
-      <rect x="120" y="0" width="115" height="28" rx="14" class="pill"/>
-      <rect x="120" y="0" width="115" height="28" rx="14" class="shimmer-overlay"/>
-      <text x="177.5" y="18" class="label" text-anchor="middle">Claude Opus 4.5</text>
+      <rect x="125" y="0" width="115" height="28" rx="14" class="pill"/>
+      <rect x="125" y="0" width="115" height="28" rx="14" class="shimmer-overlay"/>
+      <text x="182.5" y="18" class="label" text-anchor="middle">Claude Sonnet 4.5</text>
     </g>
 
-    <!-- GPT-5.2 -->
+    <!-- GPT-5.3-Codex -->
     <g>
-      <rect x="245" y="0" width="70" height="28" rx="14" class="pill-light"/>
-      <rect x="245" y="0" width="70" height="28" rx="14" class="shimmer-overlay"/>
-      <text x="280" y="18" class="label" text-anchor="middle">GPT-5.2</text>
+      <rect x="250" y="0" width="105" height="28" rx="14" class="pill-light"/>
+      <rect x="250" y="0" width="105" height="28" rx="14" class="shimmer-overlay"/>
+      <text x="302.5" y="18" class="label" text-anchor="middle">GPT-5.3-Codex</text>
     </g>
 
     <!-- Gemini 3 Pro -->
     <g>
-      <rect x="325" y="0" width="100" height="28" rx="14" class="pill-dark"/>
-      <rect x="325" y="0" width="100" height="28" rx="14" class="shimmer-overlay"/>
-      <text x="375" y="18" class="label" text-anchor="middle">Gemini 3 Pro</text>
+      <rect x="365" y="0" width="100" height="28" rx="14" class="pill-dark"/>
+      <rect x="365" y="0" width="100" height="28" rx="14" class="shimmer-overlay"/>
+      <text x="415" y="18" class="label" text-anchor="middle">Gemini 3 Pro</text>
     </g>
 
     <!-- Grok 3 -->
     <g>
-      <rect x="435" y="0" width="65" height="28" rx="14" class="pill"/>
-      <rect x="435" y="0" width="65" height="28" rx="14" class="shimmer-overlay"/>
-      <text x="467.5" y="18" class="label" text-anchor="middle">Grok 3</text>
+      <rect x="475" y="0" width="65" height="28" rx="14" class="pill"/>
+      <rect x="475" y="0" width="65" height="28" rx="14" class="shimmer-overlay"/>
+      <text x="507.5" y="18" class="label" text-anchor="middle">Grok 3</text>
     </g>
 
     <!-- Composer -->
     <g>
-      <rect x="510" y="0" width="80" height="28" rx="14" class="pill-light"/>
-      <rect x="510" y="0" width="80" height="28" rx="14" class="shimmer-overlay"/>
-      <text x="550" y="18" class="label" text-anchor="middle">Composer</text>
+      <rect x="550" y="0" width="80" height="28" rx="14" class="pill-light"/>
+      <rect x="550" y="0" width="80" height="28" rx="14" class="shimmer-overlay"/>
+      <text x="590" y="18" class="label" text-anchor="middle">Composer</text>
     </g>
   </g>
 
