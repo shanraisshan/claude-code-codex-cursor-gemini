@@ -1,0 +1,37 @@
+# AI TERMS
+
+
+| Term | Author | Definition |
+|------|--------|------------|
+| Agentic Design Patterns | [Andrew Ng](https://www.deeplearning.ai/) (DeepLearning.AI) | Four core patterns: Reflection, Tool Use, Planning, Multi-Agent Collaboration |
+| Agentic Engineering | [Andrej Karpathy](https://x.com/karpathy) (Eureka Labs, ex-OpenAI) | Orchestrating AI agents that write code, with humans providing oversight |
+| Agentic Workflow | | Structured sequence of AI agent tasks to complete a goal |
+| Agent = LLM + memory + planning + tools | [Lilian Weng](https://lilianweng.github.io/) (ex-OpenAI) | Foundational framework defining LLM-powered autonomous agents |
+| AI Engineer | [Swyx / Shawn Wang](https://www.smol.ai/) (Smol.ai) | Engineer building with AI APIs without deep ML expertise — a new role distinct from ML Engineer |
+| AI Slop | [Simon Willison](https://simonwillison.net/) & [Casey Newton](https://www.platformer.news/) | Low-quality AI-generated content produced in quantity |
+| Centaur Work | [Ethan Mollick](https://www.oneusefulthing.org/) (Wharton) | Human-AI collab with clear division — human does X, AI does Y, switching strategically |
+| Chain-of-Thought Prompting | [Jason Wei](https://x.com/jabornewe) (Google/OpenAI) | Intermediate reasoning steps to improve LLM performance on complex tasks |
+| Closing the Loop | | Ensuring AI output feeds back for validation and correction |
+| Context Bloat | | Excess context degrading AI performance and accuracy |
+| Context Engineering | [Dexter Horthy](https://www.humanlayer.dev/) (HumanLayer) | Managing context provided to AI agents for maximum effectiveness |
+| Context Rot | | Context becoming stale or irrelevant over long sessions |
+| Cyborg Work | [Ethan Mollick](https://www.oneusefulthing.org/) (Wharton) | Human-AI collab deeply intertwined — moving fluidly between human and AI contributions |
+| Dumb Zone | | Context window region where AI performance degrades |
+| Ghost Intelligence | [Andrej Karpathy](https://x.com/karpathy) (Eureka Labs, ex-OpenAI) | LLM intelligence as "summoning ghosts" — emphasizing alien cognitive architecture |
+| Hallucination | | AI generating plausible but incorrect information |
+| Harness | | Framework wrapping AI for controlled execution |
+| Jagged Intelligence | [Andrej Karpathy](https://x.com/karpathy) (Eureka Labs, ex-OpenAI) | AI excels at complex tasks while failing at simple ones — uneven capability profile |
+| MCP (Model Context Protocol) | [David Soria Parra](https://x.com/anthropaborting) & [Justin Spahr-Summers](https://x.com/jspahrsummers) (Anthropic) | Universal standard for connecting AI to external tools and data |
+| One Shot | | Single-attempt task completion by AI |
+| Orchestration | | Coordinating multiple AI agents or steps in a workflow |
+| Progressive Disclosure | | Revealing context to AI incrementally as needed |
+| Prompt Injection | [Simon Willison](https://simonwillison.net/) | Malicious inputs that manipulate LLM system instructions — analogous to SQL injection |
+| RAG (Retrieval-Augmented Generation) | [Patrick Lewis](https://www.patricklewis.io/) (Meta AI) | Combining model knowledge with external retrieval for grounded generation |
+| Ralph Loop | [Geoffrey Huntley](https://ghuntley.com/) | Continuous agent loop pattern (`while :; do cat PROMPT.md \| claude-code ; done`) |
+| Rate Limit Jail | | Hitting API rate limits repeatedly, blocking progress |
+| Scaffolding | | Supporting structure around AI for reliable output |
+| Slot Machine Method | | save→run→revert→retry pattern for non-deterministic AI |
+| Stop | | Knowing when to halt AI generation to avoid degradation |
+| The Holy Trinity | | Skills + Agents + Hooks architecture pattern |
+| Token Burn | | Wasting tokens on irrelevant or redundant context |
+| Vibe Coding | [Andrej Karpathy](https://x.com/karpathy) (Eureka Labs, ex-OpenAI) | Letting AI generate code without reading diffs — "give in to the vibes" |

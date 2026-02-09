@@ -11,6 +11,15 @@
 
 > **Last Updated:** 2026-02-06
 
+**AI TERMS:**
+
+| | | | | |
+|---|---|---|---|---|
+| Agentic Engineering | AI Slop | Context Bloat | Context Engineering | Context Rot |
+| Dumb Zone | Hallucination | Scaffolding | Orchestration | Vibe Coding |
+
+[**See Complete List →**](/reports/ai-terms)
+
 ## Context Window Comparison
 
 | Tool | Largest Context | Best Model | Input $/M | Output $/M | Source |
