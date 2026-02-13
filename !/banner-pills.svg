@@ -50,18 +50,18 @@
       <text x="300" y="18" class="label" text-anchor="middle">Devin</text>
     </g>
 
-    <!-- Augment Code -->
+    <!-- Auggie CLI -->
     <g>
-      <rect x="340" y="0" width="105" height="28" rx="14" class="pill"/>
-      <rect x="340" y="0" width="105" height="28" rx="14" class="shimmer-overlay"/>
-      <text x="392.5" y="18" class="label" text-anchor="middle">Augment Code</text>
+      <rect x="340" y="0" width="85" height="28" rx="14" class="pill"/>
+      <rect x="340" y="0" width="85" height="28" rx="14" class="shimmer-overlay"/>
+      <text x="382.5" y="18" class="label" text-anchor="middle">Auggie CLI</text>
     </g>
 
     <!-- GitHub Copilot -->
     <g>
-      <rect x="455" y="0" width="110" height="28" rx="14" class="pill-light"/>
-      <rect x="455" y="0" width="110" height="28" rx="14" class="shimmer-overlay"/>
-      <text x="510" y="18" class="label" text-anchor="middle">GitHub Copilot</text>
+      <rect x="435" y="0" width="110" height="28" rx="14" class="pill-light"/>
+      <rect x="435" y="0" width="110" height="28" rx="14" class="shimmer-overlay"/>
+      <text x="490" y="18" class="label" text-anchor="middle">GitHub Copilot</text>
     </g>
   </g>
 
