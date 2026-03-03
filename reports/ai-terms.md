@@ -33,6 +33,7 @@
 | AI Engineer | [Swyx / Shawn Wang](https://www.smol.ai/) (Smol.ai) | Engineer building with AI APIs without deep ML expertise — a new role distinct from ML Engineer |
 | Centaur Work | [Ethan Mollick](https://www.oneusefulthing.org/) (Wharton) | Human-AI collab with clear division — human does X, AI does Y, switching strategically |
 | Cyborg Work | [Ethan Mollick](https://www.oneusefulthing.org/) (Wharton) | Human-AI collab deeply intertwined — moving fluidly between human and AI contributions |
+| Compound Engineering | [Dan Shipper](https://every.to/@danshipper) & [Kieran Klaassen](https://every.to/@kieran) (Every) | AI-assisted development where each feature makes the next easier to build — agents write code and every bug, failed test, or insight gets documented and reused by future agents |
 | Vibe Coding | [Andrej Karpathy](https://x.com/karpathy) (Eureka Labs, ex-OpenAI) | Letting AI generate code without reading diffs — "give in to the vibes" |
 
 
