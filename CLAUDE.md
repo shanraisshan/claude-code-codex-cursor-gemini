@@ -41,6 +41,17 @@ Located in `.claude/agents/`, each with specialized persona and tools:
 | cursor-research-agent | Elena Rodriguez | Cursor IDE, multi-model support |
 | gemini-cli-research-agent | Dr. Raj Patel | Gemini CLI, Google models |
 
+## Git Commit Rules
+
+When committing changes, **create separate commits per file**. Do NOT bundle multiple file changes into a single commit. Each file gets its own commit with a descriptive message specific to that file's changes.
+
+For example, if `README.md`, `best-practice/claude-subagents.md`, and a skill file all changed:
+- Commit 1: `git add README.md` → commit with README-specific message
+- Commit 2: `git add best-practice/claude-subagents.md` → commit with subagents-doc-specific message
+- Commit 3: `git add .claude/skills/weather-fetcher/SKILL.md` → commit with skill-specific message
+
+This makes the git history cleaner and easier to review, revert, or cherry-pick individual changes.
+
 ## Key Files to Update
 
 When research finds changes:
