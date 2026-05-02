@@ -105,6 +105,17 @@ steps:
       - action: Show diff between current README and proposed updates
       - action: Ask user "These are my findings. Do you want to update the README?"
       - action: Wait for user confirmation before making any changes
+
+  - step: 4
+    name: Update "Updated with Claude Code" Badge
+    description: After README and report updates are confirmed, refresh the timestamp badge in README.md
+    execution: sequential
+    tasks:
+      - action: Get current Claude Code version via `claude --version` (extract `X.Y.Z`)
+      - action: Get current local date/time formatted as `Mon DD, YYYY H:MM AM/PM PKT` via `date +"%b %d, %Y %I:%M %p PKT"`
+      - action: URL-encode the inner badge text — replace ` ` with `%20`, `,` with `%2C`, `:` with `%3A`
+      - action: Replace the existing badge line in README.md (located directly below the description) with the freshly generated badge
+      - action: Confirm only the badge line changed; do NOT add or restore a "Last Updated" plaintext line
 ```
 
 ---
@@ -220,6 +231,20 @@ mkdir -p ${CLAUDE_PROJECT_DIR}/research/{YYYY-MM-DD_HH-MM-SS}
 > "These are my findings for context windows. Do you want to update the README?"
 
 **IMPORTANT**: Do NOT update README.md or reports/context-comparison.md without explicit user approval.
+
+**Step 4**: After updates are applied, refresh the "updated with Claude Code" badge directly below the description in `README.md`. The badge format is:
+
+```markdown
+![updated with Claude Code](https://img.shields.io/badge/updated_with_Claude_Code-v{VERSION}%20({DATE_TIME_URLENCODED})-white?style=flat&labelColor=555)<br>
+```
+
+Where:
+- `{VERSION}` = output of `claude --version` (just the `X.Y.Z` part)
+- `{DATE_TIME_URLENCODED}` = output of `date +"%b %d, %Y %I:%M %p PKT"`, URL-encoded (` ` → `%20`, `,` → `%2C`, `:` → `%3A`)
+
+Example: `v2.1.126%20(May%2002%2C%202026%203%3A07%20PM%20PKT)`
+
+The badge replaces any prior "Last Updated" line — there must be exactly one timestamp source in the README, and it lives in the badge.
 
 ---
 
