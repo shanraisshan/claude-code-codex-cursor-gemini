@@ -43,12 +43,19 @@ Located in `.claude/agents/`, each with specialized persona and tools:
 
 ## Git Commit Rules
 
-When committing changes, **create separate commits per file**. Do NOT bundle multiple file changes into a single commit. Each file gets its own commit with a descriptive message specific to that file's changes.
+**One file per commit.** Each commit MUST contain exactly one file — no exceptions. Never bundle multiple files into a single commit, even if the changes are related.
 
-For example, if `README.md`, `best-practice/claude-subagents.md`, and a skill file all changed:
+Workflow when multiple files have changed:
+1. `git add <single-file>` — stage only one file
+2. `git commit -m "<message specific to that file>"` — commit it
+3. Repeat for each remaining file, one at a time
+
+For example, if `README.md`, `best-practice/claude-subagents.md`, and a skill file all changed, produce three separate commits:
 - Commit 1: `git add README.md` → commit with README-specific message
 - Commit 2: `git add best-practice/claude-subagents.md` → commit with subagents-doc-specific message
 - Commit 3: `git add .claude/skills/weather-fetcher/SKILL.md` → commit with skill-specific message
+
+Never use `git add .`, `git add -A`, or `git add -u` — these stage multiple files at once. Always pass an explicit single file path to `git add`.
 
 This makes the git history cleaner and easier to review, revert, or cherry-pick individual changes.
 
