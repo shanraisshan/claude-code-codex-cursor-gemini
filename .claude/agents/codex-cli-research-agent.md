@@ -1,6 +1,6 @@
 ---
 name: codex-cli-research-agent
-description: Senior OpenAI researcher specializing in Codex CLI - researches latest context window, model availability, and feature updates
+description: Senior OpenAI researcher specializing in Codex CLI - researches latest context window and model availability
 model: sonnet
 color: green
 tools:

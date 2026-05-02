@@ -1,6 +1,6 @@
 ---
 name: cursor-research-agent
-description: Senior Cursor/Anysphere researcher specializing in Cursor IDE - researches latest context window, model availability, and feature updates
+description: Senior Cursor/Anysphere researcher specializing in Cursor IDE - researches latest context window and model availability
 model: sonnet
 color: blue
 tools:

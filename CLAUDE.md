@@ -4,30 +4,27 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Purpose
 
-This is a research and comparison repository for AI coding assistants: **Claude Code**, **Codex CLI**, **Gemini CLI**, and **Cursor**. The repository tracks context window sizes, model availability, and feature comparisons across these tools.
+This is a research and comparison repository for AI coding assistants: **Claude Code**, **Codex CLI**, **Gemini CLI**, and **Cursor**. The repository tracks context window sizes and model availability across these tools.
 
 ## Project Structure
 
-- `README.md` - Quick comparison tables for context windows and features
+- `README.md` - Quick comparison table for context windows
 - `reports/context-comparison.md` - Detailed model comparison data
 - `research/` - Timestamped research session outputs
 - `.claude/agents/` - Research agent definitions (claude-code, codex-cli, cursor, gemini-cli)
-- `.claude/commands/workflow.md` - The `/workflow` command for research automation
+- `.claude/commands/workflow-context-window.md` - The `/workflow-context-window` command for research automation
 - `.claude/hooks/` - Audio notification system for hook events
 
 ## Research Workflow
 
-Use `/workflow` to execute the research process. Each agent researches **two sections**:
-
-1. **Context Windows** - Models, sizes, limits, deprecations
-2. **Features** - Hooks, plugins, commands, integrations, etc.
+Use `/workflow-context-window` to execute the research process. Each agent researches **Context Windows** — models, sizes, limits, deprecations.
 
 ### Workflow Steps
 
 1. Creates timestamped folder in `research/`
 2. Launches 4 research agents in **parallel** (must use single message with 4 Task tool calls)
-3. Each agent writes findings to shared `research.md` with `### Context Windows` and `### Features` subsections
-4. Aggregates results into `result.md` with diff comparison for both sections
+3. Each agent writes findings to shared `research.md` under `### Context Windows`
+4. Aggregates results into `result.md` with diff comparison
 5. **Requires user approval** before updating README.md
 
 ## Research Agents
@@ -62,6 +59,6 @@ This makes the git history cleaner and easier to review, revert, or cherry-pick 
 ## Key Files to Update
 
 When research finds changes:
-- `README.md` - Context Window Comparison table, Feature Comparison table
+- `README.md` - Context Window Comparison table
 - `reports/context-comparison.md` - Detailed model breakdowns, deprecation timelines
 

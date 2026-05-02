@@ -1,6 +1,6 @@
 ---
 name: gemini-cli-research-agent
-description: Senior Google DeepMind researcher specializing in Gemini CLI - researches latest context window, model availability, and feature updates
+description: Senior Google DeepMind researcher specializing in Gemini CLI - researches latest context window and model availability
 model: sonnet
 color: yellow
 tools:
